@@ -6,8 +6,23 @@ from typing import Optional
 
 ROOT = Path(__file__).resolve().parent.parent
 DOMAIN = "https://fitcalcify.com"
-VERSION = "20260319-31"
+VERSION = "20260319-32"
 TODAY = date(2026, 3, 17).isoformat()
+BAIDU_ANALYTICS_SNIPPET = """<script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?8a3923317915e8601c56fa31b5f16316";
+      hm.async = true;
+      hm.setAttribute("data-baidu-analytics", "true");
+      var s = document.getElementsByTagName("script")[0];
+      if (s && s.parentNode) {
+        s.parentNode.insertBefore(hm, s);
+      } else {
+        document.head.appendChild(hm);
+      }
+    })();
+    </script>"""
 
 LANGS = {
     "en": {"html": "en", "locale": "en_US", "site_name": "Health Toolkit Lab"},
@@ -281,6 +296,7 @@ def render_head(path: Path, original: str) -> str:
     <meta name="twitter:title" content="{clean_title(title)}">
     <meta name="twitter:description" content="{description}">
     <script type="application/ld+json">{structured_data(path, title, description)}</script>
+    {BAIDU_ANALYTICS_SNIPPET}
     <link rel="stylesheet" href="/assets/styles.css?{VERSION}">
   </head>"""
     updated = re.sub(r"<head>.*?</head>", head, original, flags=re.S | re.I)
