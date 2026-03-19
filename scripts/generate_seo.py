@@ -6,7 +6,7 @@ from typing import Optional
 
 ROOT = Path(__file__).resolve().parent.parent
 DOMAIN = "https://www.healthtoolkitlab.com"
-VERSION = "20260318-30"
+VERSION = "20260319-31"
 TODAY = date(2026, 3, 17).isoformat()
 
 LANGS = {

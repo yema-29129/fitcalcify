@@ -1,4 +1,18 @@
 (function () {
+  window._hmt = window._hmt || [];
+  if (!document.querySelector('script[data-baidu-analytics="true"]')) {
+    const hm = document.createElement("script");
+    hm.src = "https://hm.baidu.com/hm.js?8a3923317915e8601c56fa31b5f16316";
+    hm.async = true;
+    hm.setAttribute("data-baidu-analytics", "true");
+    const firstScript = document.getElementsByTagName("script")[0];
+    if (firstScript && firstScript.parentNode) {
+      firstScript.parentNode.insertBefore(hm, firstScript);
+    } else {
+      document.head.appendChild(hm);
+    }
+  }
+
   const supportedLanguages = [
     { code: "en", label: "English" },
     { code: "zh", label: "简体中文" },
