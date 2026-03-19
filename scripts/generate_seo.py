@@ -5,7 +5,7 @@ from pathlib import Path
 from typing import Optional
 
 ROOT = Path(__file__).resolve().parent.parent
-DOMAIN = "https://www.healthtoolkitlab.com"
+DOMAIN = "https://fitcalcify.com"
 VERSION = "20260319-31"
 TODAY = date(2026, 3, 17).isoformat()
 
@@ -336,8 +336,8 @@ write(ROOT / "sitemap.xml", build_sitemap())
 robots = """User-agent: *
 Allow: /
 
-Host: www.healthtoolkitlab.com
-Sitemap: https://www.healthtoolkitlab.com/sitemap.xml
+Host: fitcalcify.com
+Sitemap: https://fitcalcify.com/sitemap.xml
 """
 write(ROOT / "robots.txt", robots)
 

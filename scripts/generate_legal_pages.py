@@ -5,7 +5,7 @@ from html import escape
 ROOT = Path(__file__).resolve().parents[1]
 LANGS = ["zh", "en", "ja", "es", "fr", "de", "pt", "ru", "hi", "ar"]
 BRAND = "Health Toolkit Lab"
-DOMAIN = "https://www.healthtoolkitlab.com"
+DOMAIN = "https://fitcalcify.com"
 EMAIL = "mashuya29129@gmail.com"
 VERSION = "20260317-16"
 
