@@ -6,7 +6,7 @@ from typing import Optional
 
 ROOT = Path(__file__).resolve().parent.parent
 DOMAIN = "https://fitcalcify.com"
-VERSION = "20260319-32"
+VERSION = "20260319-33"
 TODAY = date(2026, 3, 17).isoformat()
 BAIDU_ANALYTICS_SNIPPET = """<script>
     var _hmt = _hmt || [];
@@ -295,6 +295,9 @@ def render_head(path: Path, original: str) -> str:
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="{clean_title(title)}">
     <meta name="twitter:description" content="{description}">
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+    <link rel="shortcut icon" href="/assets/favicon.svg">
+    <link rel="apple-touch-icon" href="/assets/favicon.svg">
     <script type="application/ld+json">{structured_data(path, title, description)}</script>
     {BAIDU_ANALYTICS_SNIPPET}
     <link rel="stylesheet" href="/assets/styles.css?{VERSION}">
