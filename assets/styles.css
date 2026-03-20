@@ -1274,7 +1274,7 @@ footer {
 .footer-panels {
   display: grid;
   gap: 24px;
-  grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr) 240px;
+  grid-template-columns: minmax(0, 1.45fr) minmax(0, 1.15fr) 240px;
   align-items: start;
 }
 
@@ -1286,6 +1286,11 @@ footer {
 .footer-note,
 .footer-links-block {
   padding: 6px 0;
+}
+
+.footer-note {
+  display: grid;
+  gap: 12px;
 }
 
 .footer-meta {
@@ -1307,6 +1312,31 @@ footer {
   justify-self: end;
   margin-left: auto;
   transform: translateX(42px);
+}
+
+.footer-friends {
+  margin-top: 8px;
+  padding-top: 14px;
+  border-top: 1px solid rgba(31, 42, 31, 0.08);
+}
+
+.footer-friends h4 {
+  margin-bottom: 12px;
+  font-size: 1rem;
+}
+
+.footer-friend-links {
+  display: grid;
+  gap: 10px;
+}
+
+.footer-friend-links a {
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.footer-friend-links a:hover {
+  color: var(--ink);
 }
 
 .footer-bottom {

@@ -101,6 +101,7 @@
         noteTitle: "重要提醒",
         noteA: "这里提供的是估算、解释和生活方式建议，不提供诊断、治疗或紧急医疗决策支持。",
         noteB: "如果你有持续不适、慢性疾病、孕期问题或高风险健康疑问，请及时咨询专业医生。",
+        friendTitle: "友情链接",
         infoTitle: "网站信息",
         about: "关于我们",
         terms: "使用条款",
@@ -115,6 +116,7 @@
         noteTitle: "重要なお知らせ",
         noteA: "このサイトは推定値、解説、生活習慣の参考を提供します。診断や治療を行うものではありません。",
         noteB: "症状が続く場合や高リスクの心配がある場合は、医療専門家に相談してください。",
+        friendTitle: "おすすめリンク",
         infoTitle: "サイト情報",
         about: "運営情報",
         terms: "利用規約",
@@ -129,6 +131,7 @@
         noteTitle: "Aviso importante",
         noteA: "Este sitio ofrece estimaciones, explicaciones y orientación de estilo de vida. No ofrece diagnóstico ni tratamiento.",
         noteB: "Si tienes síntomas persistentes o preguntas de alto riesgo, consulta a un profesional sanitario.",
+        friendTitle: "Enlaces recomendados",
         infoTitle: "Información del sitio",
         about: "Acerca de",
         terms: "Términos de uso",
@@ -143,6 +146,7 @@
         noteTitle: "Note importante",
         noteA: "Ce site fournit des estimations, des explications et des conseils de mode de vie. Il ne fournit ni diagnostic ni traitement.",
         noteB: "En cas de symptômes persistants ou de questions à risque, consultez un professionnel de santé.",
+        friendTitle: "Liens utiles",
         infoTitle: "Infos du site",
         about: "À propos",
         terms: "Conditions d'utilisation",
@@ -157,6 +161,7 @@
         noteTitle: "Wichtiger Hinweis",
         noteA: "Diese Website bietet Schätzungen, Erklärungen und Hinweise zum Lebensstil. Sie ersetzt keine Diagnose oder Behandlung.",
         noteB: "Bei anhaltenden Beschwerden oder Risikofragen wenden Sie sich an medizinisches Fachpersonal.",
+        friendTitle: "Empfohlene Links",
         infoTitle: "Website-Infos",
         about: "Über uns",
         terms: "Nutzungsbedingungen",
@@ -171,6 +176,7 @@
         noteTitle: "Aviso importante",
         noteA: "Este site fornece estimativas, explicações e orientação de estilo de vida. Não oferece diagnóstico nem tratamento.",
         noteB: "Se houver sintomas persistentes ou dúvidas de maior risco, procure um profissional de saúde.",
+        friendTitle: "Links recomendados",
         infoTitle: "Informações do site",
         about: "Sobre",
         terms: "Termos de uso",
@@ -185,6 +191,7 @@
         noteTitle: "Важно",
         noteA: "Сайт предоставляет оценки, пояснения и советы по образу жизни. Он не заменяет диагностику и лечение.",
         noteB: "При стойких симптомах или вопросах повышенного риска обратитесь к медицинскому специалисту.",
+        friendTitle: "Полезные ссылки",
         infoTitle: "Информация о сайте",
         about: "О сайте",
         terms: "Условия использования",
@@ -199,6 +206,7 @@
         noteTitle: "महत्वपूर्ण सूचना",
         noteA: "यह साइट अनुमान, व्याख्या और जीवनशैली संबंधी मार्गदर्शन देती है। यह निदान या उपचार नहीं देती।",
         noteB: "यदि लगातार लक्षण हों या उच्च जोखिम से जुड़े प्रश्न हों, तो चिकित्सकीय विशेषज्ञ से सलाह लें।",
+        friendTitle: "सुझावित लिंक",
         infoTitle: "साइट जानकारी",
         about: "हमारे बारे में",
         terms: "उपयोग की शर्तें",
@@ -213,6 +221,7 @@
         noteTitle: "تنبيه مهم",
         noteA: "يقدم هذا الموقع تقديرات وشرحًا وإرشادات لنمط الحياة، ولا يقدم تشخيصًا أو علاجًا.",
         noteB: "إذا كانت لديك أعراض مستمرة أو أسئلة عالية الخطورة، فاستشر مختصًا طبيًا.",
+        friendTitle: "روابط مفيدة",
         infoTitle: "معلومات الموقع",
         about: "من نحن",
         terms: "شروط الاستخدام",
@@ -227,6 +236,7 @@
         noteTitle: "Important Note",
         noteA: "This site provides estimates, explanations, and lifestyle guidance. It does not provide diagnosis, treatment, or emergency medical support.",
         noteB: "If you have ongoing symptoms, chronic conditions, pregnancy-related concerns, or high-risk questions, consult a qualified clinician.",
+        friendTitle: "Friendly Links",
         infoTitle: "Site Info",
         about: "About",
         terms: "Terms",
@@ -918,6 +928,12 @@
       if (!node.classList.contains("site-footer")) node.remove();
     });
     const copy = footerCopy(lang);
+    const friendlyLinks = [
+      { label: "天马黑珍珠 社群", href: "https://tmhzz.com/" },
+      { label: "HAIMA 投资理财社群", href: "https://www.vooqqqm.com/" },
+      { label: "Calcwisehub", href: "https://calcwisehub.com/" },
+      { label: "薅羊毛活动站", href: "https://bank.vooqqqm.com/index.html" }
+    ];
     const footer = document.createElement("footer");
     footer.className = "site-footer";
     footer.innerHTML = `
@@ -934,6 +950,12 @@
             <h3>${copy.noteTitle}</h3>
             <p>${copy.noteA}</p>
             <p>${copy.noteB}</p>
+            <div class="footer-friends">
+              <h4>${copy.friendTitle}</h4>
+              <div class="footer-friend-links">
+                ${friendlyLinks.map((item) => `<a href="${item.href}" target="_blank" rel="noopener noreferrer">${item.label}</a>`).join("")}
+              </div>
+            </div>
           </div>
           <div class="footer-links-block">
             <h3>${copy.infoTitle}</h3>
