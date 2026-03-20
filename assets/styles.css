@@ -1290,7 +1290,7 @@ footer {
 
 .footer-note {
   display: grid;
-  gap: 12px;
+  align-content: start;
 }
 
 .footer-meta {
@@ -1315,13 +1315,12 @@ footer {
 }
 
 .footer-friends {
-  margin-top: 8px;
-  padding-top: 14px;
-  border-top: 1px solid rgba(31, 42, 31, 0.08);
+  display: grid;
+  gap: 12px;
 }
 
-.footer-friends h4 {
-  margin-bottom: 12px;
+.footer-friends h3 {
+  margin-bottom: 0;
   font-size: 1rem;
 }
 
@@ -1391,28 +1390,4 @@ footer {
   .topbar .shell,
   .field-grid,
   .stats,
-  .meal-planner-explain,
-  .meal-planner-input-row {
-    grid-template-columns: 1fr;
-  }
-
-  .hero-copy,
-  .hero-aside,
-  .section,
-  .legal,
-  .contact-card,
-  .language-card {
-    padding: 22px;
-  }
-
-  h1 {
-    max-width: none;
-  }
-}
-
-[dir="rtl"] body,
-[dir="rtl"] input,
-[dir="rtl"] select,
-[dir="rtl"] button {
-  font-family: "Tahoma", "Noto Sans Arabic", sans-serif;
-}
+  .meal-p

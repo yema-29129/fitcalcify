@@ -98,7 +98,6 @@
       zh: {
         intro: "把常见的健康计算器、睡眠工具、营养工具和健身工具整理在一起，帮助你更快找到需要的参考信息。站内内容仅用于日常了解和自我管理参考。",
         meta: ["仅供参考", "非医疗建议", "需要时请咨询医生"],
-        noteTitle: "重要提醒",
         noteA: "这里提供的是估算、解释和生活方式建议，不提供诊断、治疗或紧急医疗决策支持。",
         noteB: "如果你有持续不适、慢性疾病、孕期问题或高风险健康疑问，请及时咨询专业医生。",
         friendTitle: "友情链接",
@@ -113,7 +112,6 @@
       ja: {
         intro: "健康計算、睡眠、栄養、運動のツールをまとめ、必要な情報をすばやく見つけやすくしています。",
         meta: ["参考情報", "医療助言ではありません", "必要に応じて医師へ相談"],
-        noteTitle: "重要なお知らせ",
         noteA: "このサイトは推定値、解説、生活習慣の参考を提供します。診断や治療を行うものではありません。",
         noteB: "症状が続く場合や高リスクの心配がある場合は、医療専門家に相談してください。",
         friendTitle: "おすすめリンク",
@@ -128,7 +126,6 @@
       es: {
         intro: "Reunimos calculadoras de salud, sueño, nutrición y fitness para que encontrar información práctica sea más fácil.",
         meta: ["Solo referencia", "No es consejo médico", "Consulta a un profesional si es necesario"],
-        noteTitle: "Aviso importante",
         noteA: "Este sitio ofrece estimaciones, explicaciones y orientación de estilo de vida. No ofrece diagnóstico ni tratamiento.",
         noteB: "Si tienes síntomas persistentes o preguntas de alto riesgo, consulta a un profesional sanitario.",
         friendTitle: "Enlaces recomendados",
@@ -143,7 +140,6 @@
       fr: {
         intro: "Nous regroupons des outils santé, sommeil, nutrition et fitness pour rendre l'information pratique plus facile à trouver.",
         meta: ["À titre informatif", "Pas un avis médical", "Consultez un professionnel si besoin"],
-        noteTitle: "Note importante",
         noteA: "Ce site fournit des estimations, des explications et des conseils de mode de vie. Il ne fournit ni diagnostic ni traitement.",
         noteB: "En cas de symptômes persistants ou de questions à risque, consultez un professionnel de santé.",
         friendTitle: "Liens utiles",
@@ -158,7 +154,6 @@
       de: {
         intro: "Gesundheits-, Schlaf-, Ernährungs- und Fitness-Tools an einem Ort, damit praktische Informationen leichter zu finden sind.",
         meta: ["Nur zur Orientierung", "Keine medizinische Beratung", "Bei Bedarf Arzt aufsuchen"],
-        noteTitle: "Wichtiger Hinweis",
         noteA: "Diese Website bietet Schätzungen, Erklärungen und Hinweise zum Lebensstil. Sie ersetzt keine Diagnose oder Behandlung.",
         noteB: "Bei anhaltenden Beschwerden oder Risikofragen wenden Sie sich an medizinisches Fachpersonal.",
         friendTitle: "Empfohlene Links",
@@ -173,7 +168,6 @@
       pt: {
         intro: "Ferramentas de saúde, sono, nutrição e fitness em um só lugar para facilitar o acesso a informações práticas.",
         meta: ["Apenas referência", "Não é orientação médica", "Consulte um profissional quando necessário"],
-        noteTitle: "Aviso importante",
         noteA: "Este site fornece estimativas, explicações e orientação de estilo de vida. Não oferece diagnóstico nem tratamento.",
         noteB: "Se houver sintomas persistentes ou dúvidas de maior risco, procure um profissional de saúde.",
         friendTitle: "Links recomendados",
@@ -188,7 +182,6 @@
       ru: {
         intro: "Мы собрали инструменты по здоровью, сну, питанию и фитнесу в одном месте, чтобы полезная информация находилась быстрее.",
         meta: ["Только справочно", "Не медицинский совет", "При необходимости обратитесь к врачу"],
-        noteTitle: "Важно",
         noteA: "Сайт предоставляет оценки, пояснения и советы по образу жизни. Он не заменяет диагностику и лечение.",
         noteB: "При стойких симптомах или вопросах повышенного риска обратитесь к медицинскому специалисту.",
         friendTitle: "Полезные ссылки",
@@ -203,7 +196,6 @@
       hi: {
         intro: "स्वास्थ्य, नींद, पोषण और फिटनेस टूल एक जगह, ताकि उपयोगी जानकारी जल्दी मिल सके।",
         meta: ["केवल संदर्भ के लिए", "यह चिकित्सकीय सलाह नहीं है", "ज़रूरत होने पर डॉक्टर से संपर्क करें"],
-        noteTitle: "महत्वपूर्ण सूचना",
         noteA: "यह साइट अनुमान, व्याख्या और जीवनशैली संबंधी मार्गदर्शन देती है। यह निदान या उपचार नहीं देती।",
         noteB: "यदि लगातार लक्षण हों या उच्च जोखिम से जुड़े प्रश्न हों, तो चिकित्सकीय विशेषज्ञ से सलाह लें।",
         friendTitle: "सुझावित लिंक",
@@ -218,7 +210,6 @@
       ar: {
         intro: "جمعنا أدوات الصحة والنوم والتغذية واللياقة في مكان واحد لتسهيل الوصول إلى المعلومات العملية.",
         meta: ["للاسترشاد فقط", "ليست نصيحة طبية", "استشر الطبيب عند الحاجة"],
-        noteTitle: "تنبيه مهم",
         noteA: "يقدم هذا الموقع تقديرات وشرحًا وإرشادات لنمط الحياة، ولا يقدم تشخيصًا أو علاجًا.",
         noteB: "إذا كانت لديك أعراض مستمرة أو أسئلة عالية الخطورة، فاستشر مختصًا طبيًا.",
         friendTitle: "روابط مفيدة",
@@ -233,7 +224,6 @@
       en: {
         intro: "Health calculators, sleep tools, nutrition tools, and fitness tools are organized in one place to make practical health information easier to find and use.",
         meta: ["For reference", "Not medical advice", "Consult a clinician when needed"],
-        noteTitle: "Important Note",
         noteA: "This site provides estimates, explanations, and lifestyle guidance. It does not provide diagnosis, treatment, or emergency medical support.",
         noteB: "If you have ongoing symptoms, chronic conditions, pregnancy-related concerns, or high-risk questions, consult a qualified clinician.",
         friendTitle: "Friendly Links",
@@ -942,16 +932,15 @@
           <div class="footer-brand">
             <a class="brand" href="/${lang}/"><span class="brand-mark" aria-hidden="true"></span><span>Health Toolkit Lab</span></a>
             <p>${copy.intro}</p>
+            <p>${copy.noteA}</p>
+            <p>${copy.noteB}</p>
             <div class="footer-meta">
               ${copy.meta.map((item) => `<span>${item}</span>`).join("")}
             </div>
           </div>
           <div class="footer-note">
-            <h3>${copy.noteTitle}</h3>
-            <p>${copy.noteA}</p>
-            <p>${copy.noteB}</p>
             <div class="footer-friends">
-              <h4>${copy.friendTitle}</h4>
+              <h3>${copy.friendTitle}</h3>
               <div class="footer-friend-links">
                 ${friendlyLinks.map((item) => `<a href="${item.href}" target="_blank" rel="noopener noreferrer">${item.label}</a>`).join("")}
               </div>
@@ -977,26 +966,4 @@
 
   if (document.documentElement.getAttribute("data-root-redirect") === "true" && location.pathname === "/" && !isCrawler()) {
     location.replace(`/${detectLanguage()}/`);
-    return;
-  }
-
-  document.querySelectorAll("[data-lang-current]").forEach((node) => {
-    node.textContent = currentPageLanguage();
-  });
-
-  const lang = currentPageLanguage();
-  document.documentElement.lang = lang;
-  rewriteLanguageLinks(lang);
-  injectTopbar(lang);
-  enhanceTopNav(lang);
-  injectMealPlanner(lang);
-  injectMealPlannerPage(lang);
-  injectFooter(lang);
-
-  document.addEventListener("click", (event) => {
-    const link = event.target.closest("[data-lang-switch]");
-    if (!link) return;
-    const targetLang = link.getAttribute("data-lang-switch");
-    localStorage.setItem("preferred-language", targetLang);
-  });
-})();
+ 
