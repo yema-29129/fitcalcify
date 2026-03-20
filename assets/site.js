@@ -966,4 +966,26 @@
 
   if (document.documentElement.getAttribute("data-root-redirect") === "true" && location.pathname === "/" && !isCrawler()) {
     location.replace(`/${detectLanguage()}/`);
- 
+    return;
+  }
+
+  document.querySelectorAll("[data-lang-current]").forEach((node) => {
+    node.textContent = currentPageLanguage();
+  });
+
+  const lang = currentPageLanguage();
+  document.documentElement.lang = lang;
+  rewriteLanguageLinks(lang);
+  injectTopbar(lang);
+  enhanceTopNav(lang);
+  injectMealPlanner(lang);
+  injectMealPlannerPage(lang);
+  injectFooter(lang);
+
+  document.addEventListener("click", (event) => {
+    const link = event.target.closest("[data-lang-switch]");
+    if (!link) return;
+    const targetLang = link.getAttribute("data-lang-switch");
+    localStorage.setItem("preferred-language", targetLang);
+  });
+})();

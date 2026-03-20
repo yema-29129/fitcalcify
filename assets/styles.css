@@ -1390,4 +1390,28 @@ footer {
   .topbar .shell,
   .field-grid,
   .stats,
-  .meal-p
+  .meal-planner-explain,
+  .meal-planner-input-row {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-copy,
+  .hero-aside,
+  .section,
+  .legal,
+  .contact-card,
+  .language-card {
+    padding: 22px;
+  }
+
+  h1 {
+    max-width: none;
+  }
+}
+
+[dir="rtl"] body,
+[dir="rtl"] input,
+[dir="rtl"] select,
+[dir="rtl"] button {
+  font-family: "Tahoma", "Noto Sans Arabic", sans-serif;
+}
